@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:3.1 
 WORKDIR /app/
-COPY trunk/PoojaStores /app/
+COPY ppojastores/trunk/PoojaStores /app/
 RUN dotnet build
 RUN dotnet publish -c Release -o out
 EXPOSE 5000
